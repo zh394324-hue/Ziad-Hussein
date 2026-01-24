@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./1.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زياد حسين | مصمم جرافيك</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { font-family: 'Cairo', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .nav-link:hover { background: rgba(102, 126, 234, 0.2); }
+        .nav-link.active { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4 md:px-6 py-3 md:py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2 md:gap-3">
+                    <img src="1.png" alt="Logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-purple-500">
+                    <span class="text-lg md:text-xl font-bold gradient-text hidden sm:block">زياد حسين</span>
+                </div>
+                <div class="flex gap-1 md:gap-2">
+                    <a href="index.html" class="nav-link active px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all">
+                        <i class="fas fa-home md:ml-2"></i><span class="hidden md:inline">الرئيسية</span>
+                    </a>
+                    <a href="profile.html" class="nav-link px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all">
+                        <i class="fas fa-user md:ml-2"></i><span class="hidden md:inline">البروفايل</span>
+                    </a>
+                    <a href="portfolio.html" class="nav-link px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all">
+                        <i class="fas fa-briefcase md:ml-2"></i><span class="hidden md:inline">أعمالي</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-16 md:pt-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="order-2 md:order-1 text-center md:text-right">
+                    <p class="text-purple-400 text-base md:text-lg mb-2">مرحباً، أنا</p>
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-3 md:mb-4">زياد حسين</h1>
+                    <h2 class="text-xl md:text-3xl gradient-text font-bold mb-4 md:mb-6">مصمم جرافيك محترف</h2>
+                    <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                        مصمم جرافيك شاب وطموح، أعمل في مجال التصميم أونلاين، أسعى لتطوير مهاراتي باستمرار وتقديم تصاميم إبداعية واحترافية تساعد العملاء على تحقيق أهدافهم التسويقية.
+                    </p>
+                    <div class="flex gap-3 md:gap-4 flex-wrap justify-center md:justify-start">
+                        <a href="portfolio.html" class="gradient-bg px-6 md:px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-all text-sm md:text-base">
+                            <i class="fas fa-eye ml-2"></i>شاهد أعمالي
+                        </a>
+                        <a href="profile.html" class="border-2 border-purple-500 px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-purple-500/20 transition-all text-sm md:text-base">
+                            <i class="fas fa-user ml-2"></i>تعرف عليّ
+                        </a>
+                    </div>
+
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-56 h-56 md:w-96 md:h-96 rounded-full gradient-bg p-1 float-animation">
+                            <img src="1.jpg" alt="زياد حسين" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-2 md:-bottom-4 -right-2 md:-right-4 bg-gray-800 px-4 md:px-6 py-2 md:py-3 rounded-full border border-purple-500">
+                            <span class="text-purple-400 font-bold text-sm md:text-base">+2 سنوات خبرة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold gradient-text mb-2">+50</div>
+                    <p class="text-gray-400">مشروع منجز</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold gradient-text mb-2">+30</div>
+                    <p class="text-gray-400">عميل سعيد</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold gradient-text mb-2">2</div>
+                    <p class="text-gray-400">سنوات خبرة</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold gradient-text mb-2" id="visitor-count">0</div>
+                    <p class="text-gray-400">زائر للموقع</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">خدماتي</h2>
+            <p class="text-gray-400 text-center mb-12">ما أقدمه لك من خدمات احترافية</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl card-hover border border-gray-700">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">تصميم السوشيال ميديا</h3>
+                    <p class="text-gray-400">تصاميم جذابة ومبتكرة لجميع منصات التواصل الاجتماعي</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl card-hover border border-gray-700">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">تصميم اللوجوهات</h3>
+                    <p class="text-gray-400">شعارات احترافية تعبر عن هوية علامتك التجارية</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl card-hover border border-gray-700">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-image text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">البوسترات والبانرات</h3>
+                    <p class="text-gray-400">تصاميم إعلانية مميزة لجميع المناسبات والحملات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">تواصل معي</h2>
+            <p class="text-gray-400 mb-8">جاهز لتحويل أفكارك إلى تصاميم مميزة</p>
+            <a href="https://wa.me/201118033419" target="_blank" class="inline-flex items-center gap-3 gradient-bg px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition-all">
+                <i class="fab fa-whatsapp text-2xl"></i>
+                تواصل عبر واتساب
+            </a>
+            <p class="mt-4 text-gray-400">
+                <i class="fas fa-phone ml-2"></i>01118033419
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 md:py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <p class="text-gray-400 text-sm md:text-base">جميع الحقوق محفوظة © 2024 - زياد حسين</p>
+            <p class="text-gray-500 text-xs md:text-sm mt-2"><i class="fas fa-phone ml-2"></i>01118033419</p>
+            <!-- Hidden Admin Button -->
+            <button onclick="openAdminModal()" class="mt-4 text-gray-700 hover:text-gray-500 transition-all text-xs opacity-30 hover:opacity-60">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+        <div class="bg-gray-800 rounded-2xl p-6 md:p-8 w-full max-w-md border border-gray-700">
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-lock text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold">دخول لوحة التحكم</h3>
+                <p class="text-gray-400 text-sm mt-2">أدخل كلمة السر للمتابعة</p>
+            </div>
+            <form onsubmit="checkPassword(event)">
+                <div class="relative mb-4">
+                    <input type="password" id="adminPassword" 
+                        class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 pr-12 focus:outline-none focus:border-purple-500 transition-all text-center text-lg tracking-widest"
+                        placeholder="••••••••" required>
+                    <i class="fas fa-key absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+                </div>
+                <p id="errorMsg" class="text-red-500 text-sm text-center mb-4 hidden">
+                    <i class="fas fa-exclamation-circle ml-1"></i>كلمة السر غير صحيحة
+                </p>
+                <div class="flex gap-3">
+                    <button type="submit" class="flex-1 gradient-bg py-3 rounded-xl font-bold hover:opacity-90 transition-all">
+                        <i class="fas fa-sign-in-alt ml-2"></i>دخول
+                    </button>
+                    <button type="button" onclick="closeAdminModal()" class="flex-1 bg-gray-700 py-3 rounded-xl font-bold hover:bg-gray-600 transition-all">
+                        إلغاء
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Load Works Data -->
+    <script src="works.js"></script>
+    <script>
+        // Update Stats from works.js
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update Works Count
+            const worksCount = typeof portfolioWorks !== 'undefined' ? portfolioWorks.length : 0;
+            // Find the element with +50 text and update it
+            const stats = document.querySelectorAll('.text-4xl.font-extrabold.gradient-text');
+            if(stats[0]) stats[0].textContent = '+' + worksCount;
+        });
+
+        // Admin Modal Functions
+        function openAdminModal() {
+            document.getElementById('adminModal').classList.remove('hidden');
+            document.getElementById('adminModal').classList.add('flex');
+            document.getElementById('adminPassword').focus();
+        }
+        
+        function closeAdminModal() {
+            document.getElementById('adminModal').classList.add('hidden');
+            document.getElementById('adminModal').classList.remove('flex');
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('errorMsg').classList.add('hidden');
+        }
+        
+        function checkPassword(e) {
+            e.preventDefault();
+            const password = document.getElementById('adminPassword').value;
+            if (password === 'Ziad.2009') {
+                sessionStorage.setItem('adminAuth', 'true');
+                window.location.href = 'admin.html';
+            } else {
+                document.getElementById('errorMsg').classList.remove('hidden');
+                document.getElementById('adminPassword').value = '';
+                document.getElementById('adminPassword').focus();
+            }
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeAdminModal();
+        });
+        
+        // Close modal when clicking outside
+        document.getElementById('adminModal').addEventListener('click', function(e) {
+            if (e.target === this) closeAdminModal();
+        });
+        // Visitor Counter (Local Only)
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitorCount') || 0;
+            count = parseInt(count) + 1;
+            localStorage.setItem('visitorCount', count);
+            document.getElementById('visitor-count').textContent = count;
+        }
+        
+        if (!sessionStorage.getItem('visited')) {
+            sessionStorage.setItem('visited', 'true');
+            updateVisitorCount();
+        } else {
+            document.getElementById('visitor-count').textContent = localStorage.getItem('visitorCount') || 0;
+        }
+    </script>
+</body>
+</html>
